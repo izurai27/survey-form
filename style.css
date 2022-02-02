@@ -1,0 +1,174 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #97c9eb;
+}
+
+.container-background {
+  width: 70vmax;
+  margin: 100px auto;
+  background-color: cyan;
+  border-radius: 40px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#92446b), color-stop(#955380), color-stop(#966294), color-stop(#9572a7), color-stop(#9381b7), color-stop(#9383b9), color-stop(#9286bc), color-stop(#9288be), color-stop(#947eb4), color-stop(#9574a9), color-stop(#96699d), to(#965f90));
+  background-image: linear-gradient(to right bottom, #92446b, #955380, #966294, #9572a7, #9381b7, #9383b9, #9286bc, #9288be, #947eb4, #9574a9, #96699d, #965f90);
+  padding: 20px;
+}
+
+.container {
+  border: 20px solid transparent;
+  border-radius: 30px;
+  background-color: #97c9eb;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+}
+
+section {
+  border: 1px solid rgba(122, 121, 121, 0.801);
+  padding: 20px 10px 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#title {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.personaldata #name, .personaldata #email, .personaldata #number {
+  display: block;
+  height: 40px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 15px;
+  width: 98%;
+  outline: none;
+  border: none;
+}
+
+.personaldata #name::-webkit-input-placeholder, .personaldata #email::-webkit-input-placeholder, .personaldata #number::-webkit-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.personaldata #name:-ms-input-placeholder, .personaldata #email:-ms-input-placeholder, .personaldata #number:-ms-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.personaldata #name::-ms-input-placeholder, .personaldata #email::-ms-input-placeholder, .personaldata #number::-ms-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.personaldata #name::placeholder, .personaldata #email::placeholder, .personaldata #number::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.personaldata p {
+  display: inline;
+}
+
+#gender, #dropdown {
+  font-family: 'Josefin Sans', sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+
+.favourably {
+  display: block;
+}
+
+#tickmarks option {
+  display: inline;
+}
+
+.brand {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+}
+
+.label-inline {
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.select-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.label {
+  margin-left: 9px;
+  margin-right: 1px;
+}
+
+.radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+button {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #965F90;
+  font-size: 1.5rem;
+  color: white;
+}
+
+button:hover {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#9095ca), color-stop(#9286bc), color-stop(#9577ac), color-stop(#96679b), color-stop(#965887), color-stop(#965481), color-stop(#954f7b), color-stop(#944b75), color-stop(#95507c), color-stop(#955583), color-stop(#965a89), to(#965f90));
+  background-image: linear-gradient(to right bottom, #9095ca, #9286bc, #9577ac, #96679b, #965887, #965481, #954f7b, #944b75, #95507c, #955583, #965a89, #965f90);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: none;
+  font-size: 2rem;
+}
+
+.form-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */

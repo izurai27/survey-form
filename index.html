@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-background">  
+<div class="container">
+    <h1 id="title">Product Evaluation Survey</h1>
+    <p id="description">Thank you for purchasing from us. Please take a moment to tell us about your experiance and how well our product has been meeting your expectations</p>
+    <form action="" id="survey-form">
+        <section class="personaldata">
+            <label id="name-label">What's your name?</label>
+            <input type="text" id="name" class="form-control" placeholder="your full name" required>
+            <label id="email-label">Please input your email</label>
+            <input type="email" id="email" class="form-control" placeholder="youremail@emaildomain" required> 
+            <label id="number-label">What's your age?</label>
+            <input type="number" id="number" class="form-control" min="18" max="70" placeholder="what is your age" required>
+            <div class="gender">
+                <p>Please indicate your gender</p>
+                <select name="gender" id="gender" class="form-select form-select-sm">
+                    <optgroup>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </optgroup>
+                    
+                </select>
+            </div>
+        </section>
+
+        <section class="topchoice">
+            <p>When thinking of buying PRODUCT, which comes to mind as your top choice</p>
+            <label for="topchoice"></label>
+                
+            <select name="topchoice" id="dropdown" class="form-select form-select-sm">
+                <optgroup>
+                    <option value="Our company">Our company</option>
+                    <option value="Other company 1">Other company 1</option>
+                    <option value="Other company 2">Other company 1</option>
+                    <option value="Other company 3">Other company 1</option>
+                </optgroup>
+                
+            </select>
+        </section>
+
+            <section class="aspect" >
+                <p>Which of these aspects led you to this choice</p>
+                <div class="form-check">
+                    <input type="checkbox" id="availability" class="form-check-input" name="aspect" value="availability">
+                <label for="availability">Availability</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="experience" class="form-check-input" name="aspect" value="personal experience">
+                <label for="experience">Personal Experience</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="price" class="form-check-input" name="aspect" value="price">
+                <label for="price">Price</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="Quality" class="form-check-input" name="aspect" value="quality">
+                <label for="quality">Quality</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="recommendation" class="form-check-input" name="aspect" value="recommendation">
+                <label for="recommendation">Recommendation</label>
+                </div>
+                
+            </section>
+
+            <section class="decisionmaker">
+                <p>When it comes to buying PRODUCT, are you the main decision maker in the house?</p>
+                <div class="form-check">
+                    <input type="radio" id="mainbuyer" class="form-check-input" name="decisionmaker" value="i am the main buyer of product">
+                    <label for="mainbuyer">I am the main buyer of Product</label>
+                </div>
+                
+                <div class="form-check">
+                    <input type="radio" id="sharedecision" class="form-check-input" name="decisionmaker" value="i share the decision">
+                    <label for="sharedecision">I share the decision</label>
+                </div>
+                
+                
+                <div class="form-check">
+                    <input type="radio" id="notdecider" class="form-check-input" name="decisionmaker" value="I am not the decider of which product is bought">
+                    <label for="notdecider">I am not the decider of which product is bought</label>
+                </div>
+            </section>
+
+            <section class="favourably">
+                
+                <label for="customRange3" class="form-label">How favourably do you think of OUR Company</label>
+                <input type="range" class="form-range" min="1" max="5" step="1" id="tickmarks">
+                <!-- <input type="range" min="1" max="5" step="1" list="tickmarks"> -->
+                <datalist id="tickmarks" class="form-range">
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist>
+                
+            </section>
+
+            <section class="explainrating">
+                
+                <label for="explainrating">Please explain your rating</label><br/>
+                <textarea id="explainrating" class="form-control" name="explainrating"
+                        rows="5" cols="33">
+                </textarea>
+            </section>
+
+            <section class="rankimportance">
+                <p>Please rank the following in order of their importance when you are looking for Product</p>
+               
+                <div class="select-group">
+                    <label class="label-inline">Brand</label>
+                    <select class="form-select form-select-sm brand" name="brand" id="brand">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                
+               
+               <div class="select-group">
+                    <label class="label-inline">Convenience</label>
+                <select class="form-select form-select-sm brand" name="Convenience" id="Convenience">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+                
+                
+                <div class="select-group">
+                    <label class="label-inline">Discounts</label>
+                <select class="form-select form-select-sm brand" name="Discounts" id="Discounts">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+                
+            
+                <div class="select-group">
+                    <label class="label-inline">Price</label>
+                <select class="form-select form-select-sm brand" name="Price" id="Price">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+                
+           
+                <div class="select-group">
+                    <label class="label-inline">Recommendations</label>
+                <select class="form-select form-select-sm brand" name="Recommendations" id="Recommendations">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div><br>
+            </section>
+
+            <section class="rate">
+                <p>Please rate the following from 1 (Strongly Disagree) to 5 (Strongly Agree)</p>
+                <div class="select-group">
+                    <div></div>
+                    <div class="radio-group">
+                        <label class='label'>1</label>
+                        <label class='label'>2</label>
+                        <label class='label'>3</label>
+                        <label class='label'>4</label>
+                        <label class='label'>5</label>
+                    </div>
+                </div>
+                
+                <div class="select-group">
+                    <label for="trustworthy">X is a brand I know to be trustworthy</label>
+                    <div class="radio-group">
+                        <input class="form-check-input"  type="radio" id="trustworthy" name="trustworthy" value="1">
+                        <input class="form-check-input"  type="radio" id="trustworthy" name="trustworthy" value="2">
+                        <input class="form-check-input"  type="radio" id="trustworthy" name="trustworthy" value="3">
+                        <input class="form-check-input"  type="radio" id="trustworthy" name="trustworthy" value="4">
+                        <input class="form-check-input"  type="radio" id="trustworthy" name="trustworthy" value="5"></br>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="select-group">
+                    <label for="confident">I am confident when I buy X</label>
+                    <div class="radio-group">
+                        <input class="form-check-input"  type="radio" id="confident" name="confident" value="1">
+                        <input class="form-check-input"  type="radio" id="confident" name="confident" value="2">
+                        <input class="form-check-input"  type="radio" id="confident" name="confident" value="3">
+                        <input class="form-check-input"  type="radio" id="confident" name="confident" value="4">
+                        <input class="form-check-input"  type="radio" id="confident" name="confident" value="5"></br>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="select-group">
+                    <label for="look_before">I look for X before I look for other version of this product</label>
+                    <div class="radio-group">
+                        <input class="form-check-input"  type="radio" id="look_before" name="look_before" value="1">
+                        <input class="form-check-input"  type="radio" id="look_before" name="look_before" value="2">
+                        <input class="form-check-input"  type="radio" id="look_before" name="look_before" value="3">
+                        <input class="form-check-input"  type="radio" id="look_before" name="look_before" value="4">
+                        <input class="form-check-input"  type="radio" id="look_before" name="look_before" value="5"></br>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="select-group">
+                    <label for="I_would_choose_x">When given the choice between X and a generic version, I would choose X</label>
+                    <div class="radio-group">
+                        <input class="form-check-input"  type="radio" id="I_would_choose_x" name="I_would_choose_x" value="1">
+                        <input class="form-check-input"  type="radio" id="I_would_choose_x" name="I_would_choose_x" value="2">
+                        <input class="form-check-input"  type="radio" id="I_would_choose_x" name="I_would_choose_x" value="3">
+                        <input class="form-check-input"  type="radio" id="I_would_choose_x" name="I_would_choose_x" value="4">
+                        <input class="form-check-input"  type="radio" id="I_would_choose_x" name="I_would_choose_x" value="5"></br>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="select-group">
+                    <label for="recommend">I would recommend X to my friends/family</label>
+                    <div class="radio-group">
+                        <input class="form-check-input"  type="radio" id="recommend" name="recommend" value="1">
+                        <input class="form-check-input"  type="radio" id="recommend" name="recommend" value="2">
+                        <input class="form-check-input"  type="radio" id="recommend" name="recommend" value="3">
+                        <input class="form-check-input"  type="radio" id="recommend" name="recommend" value="4">
+                        <input class="form-check-input"  type="radio" id="recommend" name="recommend" value="5"></br>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="select-group">
+                    <label for="will_not_purchase_another_brand">if X is not available I will not purchase another brand</label>
+                    <div class="radio-group">
+                        <input class="form-check-input"  type="radio" id="will_not_purchase_another_brand" name="will_not_purchase_another_brand" value="1">
+                        <input class="form-check-input"  type="radio" id="will_not_purchase_another_brand" name="will_not_purchase_another_brand" value="2">
+                        <input class="form-check-input"  type="radio" id="will_not_purchase_another_brand" name="will_not_purchase_another_brand" value="3">
+                        <input class="form-check-input"  type="radio" id="will_not_purchase_another_brand" name="will_not_purchase_another_brand" value="4">
+                        <input class="form-check-input"  type="radio" id="will_not_purchase_another_brand" name="will_not_purchase_another_brand" value="5"></br>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="select-group">
+                    <label for="will_find_x">If X is not available I will try to find it somewhere else</label>
+                    <div class="radio-group">
+                        <input class="form-check-input" type="radio" id="will_find_x" name="will_find_x" value="1">
+                        <input class="form-check-input" type="radio" id="will_find_x" name="will_find_x" value="2">
+                        <input class="form-check-input" type="radio" id="will_find_x" name="will_find_x" value="3">
+                        <input class="form-check-input" type="radio" id="will_find_x" name="will_find_x" value="4">
+                        <input class="form-check-input" type="radio" id="will_find_x" name="will_find_x" value="5"></br>
+                    </div>
+                   
+                </div>
+            </section>
+
+            <section class="frequency">
+                <p>How often have you used X in the past?</p>
+                <input class="form-check-input" type="radio" id="never" name="frequency" value="Never">
+                <label for="never">Never</label>
+                <input class="form-check-input" type="radio" id="rarely" name="frequency" value="Rarely">
+                <label for="rarely">Rarely</label>
+                <input class="form-check-input" type="radio" id="sometimes" name="frequency" value="sometimes">
+                <label for="sometimes">Sometimes</label>
+                <input class="form-check-input" type="radio" id="frequently" name="frequency" value="frequently">
+                <label for="frequently">Frequently</label>
+                <input class="form-check-input" type="radio" id="onlyUseX" name="frequency" value="I only use X">
+                <label for="onlyUseX">I only use X</label>
+            </section>
+
+            
+
+            <section class="income">
+                <p>Please indicate your annual income</p>
+                <input class="form-check-input" type="radio" id="lessthan25000" name="annual_income" value="lessthan25000">
+                <label for="lessthan25000">&le; 25,000 </label><br/>
+                <input class="form-check-input" type="radio" id="25001to50k" name="annual_income" value="25001to50k">
+                <label for="25001to50k">$25,001 to $50,000</label><br/>
+                <input class="form-check-input" type="radio" id="50001to75k" name="annual_income" value="50001to75k">
+                <label for="50001to75k">$50,001 to $75,000</label><br/>
+                <input class="form-check-input" type="radio" id="75001to100k" name="annual_income" value="75001to100k">
+                <label for="75001to100k">$75,001 to $100,000</label><br/>
+                <input class="form-check-input" type="radio" id="morethan100k" name="annual_income" value="morethan100k">
+                <label for="morethan100k">More than $100,000</label><br/>
+
+            </section>
+            <button type="submit" id="submit" >Submit</button>
+           
+    </form>
+
+</div>
+</div>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
