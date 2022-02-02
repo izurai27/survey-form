@@ -6,7 +6,7 @@ body {
 }
 
 .container-background {
-  width: 70vmax;
+  width: 90vw;
   margin: 100px auto;
   background-color: cyan;
   border-radius: 40px;
@@ -19,7 +19,6 @@ body {
   border: 20px solid transparent;
   border-radius: 30px;
   background-color: #97c9eb;
-  padding: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;

@@ -14,7 +14,7 @@ body{
 }
 
 .container-background{
-    width:70vmax;
+    width:90vw;
     // background-image: linear-gradient(to right,$mainbackground, $maincolor);
     margin:100px auto;
     background-color:cyan;
@@ -31,7 +31,7 @@ body{
     // box-shadow:1px 1px 5px 1px $maincolor, -1px -1px 5px 1px salmon;
     background-color: $mainbackground;
     
-    padding:50px;
+    // padding:50px;
     box-sizing:border-box;
     position:relative;
     z-index:9;
