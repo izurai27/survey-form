@@ -157,10 +157,9 @@ button {
 button:hover {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#9095ca), color-stop(#9286bc), color-stop(#9577ac), color-stop(#96679b), color-stop(#965887), color-stop(#965481), color-stop(#954f7b), color-stop(#944b75), color-stop(#95507c), color-stop(#955583), color-stop(#965a89), to(#965f90));
   background-image: linear-gradient(to right bottom, #9095ca, #9286bc, #9577ac, #96679b, #965887, #965481, #954f7b, #944b75, #95507c, #955583, #965a89, #965f90);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 1s;
+  transition: 1s;
   border: none;
-  font-size: 2rem;
 }
 
 .form-range {

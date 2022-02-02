@@ -155,9 +155,9 @@ button{
 
     &:hover{
         background-image: linear-gradient(to right bottom, #9095ca, #9286bc, #9577ac, #96679b, #965887, #965481, #954f7b, #944b75, #95507c, #955583, #965a89, #965f90);
-        transition:1s ease-in-out;
+        transition:1s ;
         border:none;
-        font-size: 2rem;
+        // font-size: 2rem;
     }
 }
 
